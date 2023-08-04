@@ -7,29 +7,32 @@
     <link rel="stylesheet" href="./main.css">
     <title>Document</title>
 </head>
-<body >
-    <div class="container border position-relative vh-100 bg-dark">
+<body>
+    <div class="container  position-relative vh-100 bg-dark" id="cont">
+        <div class="container   " id="inputContainer">
+            <div class="container w-50 position-absolute bg-light p-0 " id="todoContainer">
+                <div class="container position-relative p-0 h-100 " >
+                    <input type="text" placeholder="Enter What-To-Do" id="input" class="position-relative w-100 h-100 ">
+                     <button class="position-absolute top-0 end-0 h-100 " id="btn">ADD</button>
+                </div>
+            </div>
 
-        <div class="container w-50 position-absolute bg-light p-0 " id="todoContainer">
-            <div class="container position-relative p-0 h-100 " >
-                <input type="text" placeholder="Enter What-To-Do" id="input" class="position-relative w-100 h-100 ">
-                 <button class="position-absolute top-0 end-0 h-100 " id="btn">ADD</button>
+        </div>
+        <div class="container  h-75 position-relative" id="listContainer">
+             <h1 class="container text-light text-center position-fixed  start-50 translate-middle-x p-0 w-100 bg-dark">Things To Do</h1>
+            <div class="container "id="toDoList">
+                <!-- list content -->
             </div>
         </div>
-        <div class="container position-absolute p-2 w-50" id="toDoList">
-            <div class="container border h-100 " id="item">
-                <span id="checkbox" >
-                   <input type="checkbox" name="" id="checkItem">
-                </span>
-            <span class="container">First list</span>
 
-            </div>
-            
-        </div>
+        
+       
 
 
     </div>
 
+    
+    
 
     
 
