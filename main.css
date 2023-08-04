@@ -51,6 +51,7 @@
 ::-webkit-scrollbar{
     display: none;
 }
-{
-
+#close{
+    outline: none;
+    border: none;
 }

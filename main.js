@@ -12,14 +12,16 @@ btn.addEventListener('click',()=>{
             Please Type What You Want To Do
         
         </div> `
+        
+    
     }else{
     toDoList.innerHTML += `<div class="container p-2 w-50 fs-5 mt-3"  style="background-color: white;border-radius: 30px;">
-    <div class="container  h-100 " id="item">
+    <div class="container d-flex  h-100 " id="item">
         <span id="checkbox" >
-        <input type="checkbox" name="" id="checkItem">
+        <input type="checkbox" name="check" id="checkItem">
         </span>
-        <span class="container">${data}</span>
-
+        <span class="container" for="check">${data}</span>
+        <button type="button" class="btn-close justify-content-end" aria-label="Close" style="width:1px;" id="close" onclick="clo(this)"></button>
     </div>
 
 </div>`
@@ -27,3 +29,8 @@ btn.addEventListener('click',()=>{
     }
     
 })
+function clo(item) {
+    if (item.parentElement) {
+        item.parentElement.remove();
+    }
+}
