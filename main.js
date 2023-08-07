@@ -15,20 +15,22 @@ btn.addEventListener('click',()=>{
         
     
     }else{
-    toDoList.innerHTML += `<div class="container p-2 w-50 fs-5 mt-3"  style="background-color: white;border-radius: 30px;">
-    <div class="container d-flex  h-100 " id="item">
+    toDoList.innerHTML += `
+    <div class="container d-flex  h-100 p-2 w-50 fs-5 mt-3" id="item" style="background-color: white;border-radius: 30px;>
         <span id="checkbox" >
         <input type="checkbox" name="check" id="checkItem">
         </span>
         <span class="container" for="check">${data}</span>
-        <button type="button" class="btn-close justify-content-end" aria-label="Close" style="width:1px;" id="close" onclick="clo(this)"></button>
+        <button type="button" class="btn-close justify-content-end me-3" aria-label="Close" style="width:1px;" id="close" onclick="clo(this)"></button>
     </div>
 
-</div>`
+`
 
     }
     
-})
+});
+
+
 function clo(item) {
     if (item.parentElement) {
         item.parentElement.remove();
